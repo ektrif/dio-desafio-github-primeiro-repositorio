@@ -1,0 +1,30 @@
+# CRIE REPOSITÓRIOS
+**git init [nome-do-projeto]** -> Cria um novo repositório local com um nome específico
+**git clone [url]** -> Baixa um projeto e seu histórico de versão inteiro
+
+# FAÇA MUDANÇAS
+**git status** -> Lista todos os arquivos novos ou modificados para serem commitados
+**git add [arquivo]** -> Faz o snapshot de um arquivo na preparação para versionamento
+**git reset [arquivo]** -> Deseleciona o arquivo, mas preserva seu conteúdo
+**git diff** -> Mostra diferenças no arquivo que não foram realizadas
+**git diff --staged** -> Mostra a diferença entre arquivos selecionados e a suas últimas
+versões
+**git commit -m "[mensagem descritiva]"** -> Grava o snapshot permanentemente do arquivo no histórico de versão
+
+#MUDANÇAS EM GRUPO
+**git branch** -> Lista todos os branches locais no repositório atual
+**git branch [nome-do-branch]** -> Cria um novo branch
+**git checkout [nome-do-branch]** -> Muda para o branch específico e atualiza o diretório de trabalho
+**git merge [branch]** -> Combina o histórico do branch específico com o branch atual
+**git branch -d [nome-do-branch]** -> Exclui o branch específico
+
+#REFATORE NOMES DOS ARQUIVOS
+**git rm --cached [arquivo]** -> Remove o arquivo do controle de versão mas preserva o arquivo
+localmente
+**git rm [arquivo]** -> Remove o arquivo do diretório de trabalho e o seleciona para remoção
+**git mv [arquivo-original] [arquivo-renomeado]** -> Muda o nome do arquivo e o seleciona para o commit
+
+#DESFAÇA COMMITS
+**git reset [commit]** -> Desfaz todos os commits depois de `[commit]`, preservando
+mudanças locais
+**git reset --hard [commit]** -> Descarta todo histórico e mudanças para o commit especificado
